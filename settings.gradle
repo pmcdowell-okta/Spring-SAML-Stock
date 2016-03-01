@@ -1,0 +1,8 @@
+include "core"
+include "sample"
+
+rootProject.name = "spring-security-saml"
+
+rootProject.children.each { p ->
+	p.name = "spring-security-saml2-${p.name}"
+}
